@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --green: #5CC365;
+}
+
+.container {
+    width: 80vw;
+    margin: auto;
+}
+
+.nav ul {
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 2em;
+}
+
+.front-section :is(h4, h3) {
+    color: var(--green);
+}
+
+.front-section h3 {
+    font-size: 3rem;
+}
+
+.front-section h4 {
+    font-size: 2.3rem;
+}
+
+.right-section {
+    background: url("img/banner.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.right-section img {
+    position: absolute;
+    right: 0;
+}
