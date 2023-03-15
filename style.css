@@ -359,6 +359,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 6em;
 }
 
 .question {
@@ -386,4 +387,86 @@ span {
 
 .question span {
     margin-right: 1em;
+}
+
+
+.contact-us {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    gap: 2em;
+    padding: 8em 1em;
+}
+
+.contact-us h4 {
+    font-size: 2.5rem;
+    font-weight: 600;
+
+}
+
+.contact-us::before {
+    content: "";
+    background: url("img/contact_bg.jpg") center/cover no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.contact-us p {
+    font-size: 1.5rem;
+}
+
+.contact-us button {
+    background-color: white;
+    color: var(--green);
+    border: none;
+    padding: .5em 1em;
+    margin-top: 1em;
+    align-self: flex-start;
+    font-weight: 500;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+.left-contact {
+    display: flex;
+    margin-right: 20%;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-direction: column;
+    background-color: white;
+    padding: 2em;
+}
+
+.contact-form>input,
+textarea {
+    padding: .5em;
+    border: none;
+    border-bottom: 2px solid var(--green);
+    background-color: transparent;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.contact-form>* {
+    outline: none;
+}
+
+footer {
+    padding: 1em;
+    text-align: center;
 }
