@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -16,17 +16,44 @@
     margin: auto;
 }
 
-.nav ul {
+.nav {
+    z-index: 1;
+    position: relative;
+
+}
+
+.nav>ul {
     margin-top: 1em;
     display: flex;
     align-items: center;
     list-style-type: none;
     justify-content: space-between;
+
 }
+
+.nav * {
+    list-style-type: none;
+}
+
 
 .nav-links ul {
     display: flex;
     gap: 2em;
+
+}
+
+.nav>ul> :nth-child(2) {
+    width: 50%;
+}
+
+
+
+.front-section {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
 }
 
 .front-section :is(h4, h3) {
@@ -42,13 +69,102 @@
 }
 
 .right-section {
-    background: url("img/banner.png");
-    background-repeat: no-repeat;
-    background-size: contain;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-78px);
+    width: 60%;
+    height: 80vh;
 }
 
 .right-section img {
+    display: inline-block;
+    width: 70%;
+
+
+}
+
+
+.right-section::before {
+    content: "";
+    background: url("img/banner.png") right no-repeat;
+    background-size: cover;
     position: absolute;
+    top: 0;
     right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.text-section {
+    width: 20em;
+    font-weight: 300;
+    margin-top: 12em;
+}
+
+.green-headings {
+    margin-bottom: 3em;
+}
+
+.text-black {
+    color: black !important;
+}
+
+.intro-text {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.text-section button {
+    padding: 1em 2em;
+    color: white;
+    background: #000;
+    border: none;
+    cursor: pointer;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 17em;
+    text-align: center;
+    font-weight: 300;
+    line-height: 1.3;
+    gap: .8em;
+}
+
+
+.service h5 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.services-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.service-img {
+    position: relative;
+    border-radius: 50%;
+    border: 4px solid var(--green);
+    width: 7em;
+    height: 7em;
+}
+
+
+.service-img::before {
+    content: "";
+    background: url("img/service1.png") center no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
