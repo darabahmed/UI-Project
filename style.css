@@ -9,12 +9,9 @@
 
 :root {
     --green: #5CC365;
+    --light-green: #D5EDDF
 }
 
-.container {
-    width: 80vw;
-    margin: auto;
-}
 
 .nav {
     z-index: 1;
@@ -80,7 +77,7 @@
 
 .right-section img {
     display: inline-block;
-    width: 70%;
+    width: 55%;
 
 
 }
@@ -149,7 +146,7 @@
 }
 
 
-.service-img {
+.service-img-1 {
     position: relative;
     border-radius: 50%;
     border: 4px solid var(--green);
@@ -157,8 +154,15 @@
     height: 7em;
 }
 
+.left-margin {
+    margin-left: 10vw;
+}
 
-.service-img::before {
+.right-margin {
+    margin-right: 10vw;
+}
+
+.service-img-1::before {
     content: "";
     background: url("img/service1.png") center no-repeat;
     position: absolute;
@@ -167,4 +171,100 @@
     width: 100%;
     height: 100%;
     z-index: -1;
+}
+
+.service-img-2 {
+    position: relative;
+    border-radius: 50%;
+    border: 4px solid var(--green);
+    width: 7em;
+    height: 7em;
+}
+
+
+.service-img-2::before {
+    content: "";
+    background: url("img/service2.png") center no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.service-img-3 {
+    position: relative;
+    border-radius: 50%;
+    border: 4px solid var(--green);
+    width: 7em;
+    height: 7em;
+}
+
+
+.service-img-3::before {
+    content: "";
+    background: url("img/service3.png") center no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.who-we-are {
+    background-color: var(--light-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7em;
+    flex-direction: column;
+}
+
+.who-we-are h4 {
+    font-size: 2rem;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+}
+
+.who-we-are span {
+    color: var(--green);
+}
+
+
+.who-we-are p {
+    font-weight: 300;
+}
+
+.who-we-are-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 66em;
+    margin-bottom: 4em;
+}
+
+.who-we-are-section div {
+    align-self: flex-start;
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+.who-we-are-section h5 {
+    margin-bottom: 1em;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.who-we-are-section button {
+    background-color: transparent;
+    color: var(--green);
+    border: 2px solid var(--green);
+    padding: 1em 2em;
+    margin-top: 1em;
+    font-weight: 500;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
