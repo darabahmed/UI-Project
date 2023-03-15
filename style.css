@@ -354,3 +354,36 @@ span {
 .more :first-child {
     background-color: #000;
 }
+
+.faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid var(--green);
+    padding: .8em .5em;
+    min-width: 35em;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+
+.faq h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.faq>div {
+    align-self: flex-start;
+}
+
+.question span {
+    margin-right: 1em;
+}
