@@ -482,4 +482,5 @@ footer {
 
 .right-contact {
     width: 100%;
+    max-width: 40em;
 }
