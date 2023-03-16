@@ -9,7 +9,8 @@
 
 :root {
     --green: #5CC365;
-    --light-green: #D5EDDF
+    --light-green: #D5EDDF;
+    --mobile-dark-bg: #BCCEC4
 }
 
 
@@ -368,7 +369,8 @@ span {
     align-items: center;
     border: 2px solid var(--green);
     padding: .8em .5em;
-    min-width: 35em;
+    width: 35em;
+    max-width: 100%;
     cursor: pointer;
     border-radius: 10px;
     margin-bottom: 1em;
@@ -383,6 +385,11 @@ span {
 
 .faq>div {
     align-self: flex-start;
+}
+
+
+.faq img {
+    width: 50%;
 }
 
 .question span {
@@ -449,6 +456,7 @@ span {
     gap: 1em;
     flex-direction: column;
     background-color: white;
+    margin-top: 5em;
     padding: 2em;
 }
 
@@ -464,9 +472,14 @@ textarea {
 
 .contact-form>* {
     outline: none;
+    width: 100%;
 }
 
 footer {
     padding: 1em;
     text-align: center;
+}
+
+.right-contact {
+    width: 100%;
 }
