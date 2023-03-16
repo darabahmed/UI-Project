@@ -55,6 +55,7 @@
     .who-we-are-section {
         flex-direction: column;
         text-align: center;
+        gap: 1em;
     }
 
     .who-we-are-section img {
@@ -94,5 +95,9 @@
     .text-section {
         width: 15em;
         max-width: 20em;
+    }
+
+    .who-we-are-section div {
+        margin: 0 2em;
     }
 }

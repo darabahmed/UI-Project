@@ -78,7 +78,9 @@
 
 .right-section img {
     display: inline-block;
-    width: 55%;
+
+    max-width: 36em;
+    transform: translateX(6em);
 
 
 }
@@ -244,6 +246,7 @@ span {
     justify-content: space-around;
     align-items: center;
     max-width: 66em;
+
     margin-bottom: 4em;
 }
 
@@ -251,6 +254,7 @@ span {
     align-self: flex-start;
     margin-top: 1em;
     margin-left: 2em;
+    text-align: left;
 }
 
 .who-we-are-section h5 {
@@ -389,7 +393,8 @@ span {
 
 
 .faq img {
-    width: 50%;
+    width: 40%;
+    max-width: 40em;
 }
 
 .question span {
@@ -425,19 +430,23 @@ span {
 }
 
 .contact-us p {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1em;
+
 }
 
 .contact-us button {
-    background-color: white;
-    color: var(--green);
     border: none;
     padding: .5em 1em;
     margin-top: 1em;
     align-self: flex-start;
     font-weight: 500;
     font-size: 1.2rem;
+    width: 10em;
     cursor: pointer;
+    background-color: #000;
+    color: white;
 }
 
 
@@ -445,10 +454,14 @@ span {
     display: flex;
     margin-right: 20%;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+
     gap: 5em;
 
 }
+
+
+
 
 .contact-form {
     display: flex;
@@ -464,7 +477,7 @@ span {
 textarea {
     padding: .5em;
     border: none;
-    border-bottom: 2px solid var(--green);
+    border-bottom: 2px solid black;
     background-color: transparent;
     color: black;
     font-size: 1.2rem;
@@ -483,4 +496,9 @@ footer {
 .right-contact {
     width: 100%;
     max-width: 40em;
+}
+
+.contact-form button {
+    align-self: center;
+
 }
